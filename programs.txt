@@ -1,0 +1,94 @@
+1.Create a list with user defined inputs.
+
+  list=[]
+  ch='y'
+  while ch=='y'
+	item=input("Enter an item to add to list")
+	list.append(item)
+	ch=input("Do you want to enter more elements (y/n)")
+  print(list)
+
+2.Add another list to one created in ques1.
+
+  list=['Ashu','Tarun','Samyak']
+  list2=['google','apple',facebook','microsoft','tesla']
+  list.extend(list2)
+  print(list)
+
+3.Count number of time an object occurs in a list.
+
+  list=['Ashu','Jon','Jamie','Clay',5,'Ragnar',5,'Rollo',5]
+  print(list.count(5))
+
+4.Sort a list in ascending order.
+
+  list=[10,9,8,7,6,5,4,3,2]
+  list.sort()
+  print(list)
+
+5.Merge to arrays.
+  
+  A=[1,2,3,4,5,6,7,8,9]
+  B=[8,9,23,34,78,90,101]
+  A.extend(B)
+  A.sort()
+  print(A)
+
+6.Stack and queue using lists.
+
+  print("Stack Implementation")
+  list=[]
+  ch='y'
+  while ch=='y':
+	opt=input("Enter 1 to push or 2 to pop")
+	if opt=='1':
+		item=input()
+		list.append(item)
+	elif opt=='2':
+		if len(list)==0
+			print("Stack Underflow)
+			break;
+		list.pop()
+	else:
+		print("Wrong Choice")
+		break
+	print(list)
+	ch=input("Continue (y/n)")
+
+  print("Queue Implementation")
+  list=[]
+  ch='y'
+  while ch=='y':
+	opt=input(1 to enqueue 2 to dequeue)
+	if opt=='1':
+		item=input()
+		list.append(item)
+	elif opt=='2':
+		if len(list)==0
+			print("Queue Underflow")
+			break
+		list.pop(0)
+	else:
+		print("Wrong Choice")
+		break
+	print(list)
+	ch=input(Do you wish to continue (y/n)")
+
+7.Count odd and even numbers in list
+
+  list=[]
+  ch='y'
+  while ch=='y':
+	item=input("Enter item of list")
+	list.append(int(item))
+	ch=input("Continue (y/n)")
+   even=0;
+   odd=0;
+
+   for i in list:
+	if i%2==0:
+		even+=even
+	else:
+		odd+=1
+   print("Even Numbers=%d" %even)
+   print("Odd Numbers=%d" %odd)
